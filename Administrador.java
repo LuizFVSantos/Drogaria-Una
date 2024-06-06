@@ -13,4 +13,8 @@ public class Administrador extends Funcionario {
     public void realizarVenda() {
         System.out.println("Acesso negado: Administrador não pode realizar vendas.");
     }
+    @Override
+    public int getTipo() {
+        return 2;
+    }
 }

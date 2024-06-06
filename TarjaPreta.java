@@ -1,7 +1,7 @@
 public class TarjaPreta extends Produto {
 
-    public TarjaPreta(String nome, double preco) {
-        super(nome, preco);
+    public TarjaPreta(String nome, double preco, int quantidade) {
+        super(nome, preco, quantidade);
     }
 
     @Override

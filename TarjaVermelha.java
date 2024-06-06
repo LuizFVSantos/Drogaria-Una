@@ -1,7 +1,7 @@
 public class TarjaVermelha extends Produto {
 
-    public TarjaVermelha(String nome, double preco) {
-        super(nome, preco);
+    public TarjaVermelha(String nome, double preco, int quantidade) {
+        super(nome, preco, quantidade);
     }
 
     @Override
@@ -9,5 +9,3 @@ public class TarjaVermelha extends Produto {
         return "Produto de tarja vermelha: venda sob prescrição médica.";
     }
 }
-
-// Classe TarjaAmarela que herda de Produto

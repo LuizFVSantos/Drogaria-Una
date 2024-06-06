@@ -51,7 +51,7 @@ public class Main {
         }
 
         funcionarios.add(funcionario);
-        System.out.println("Funcionário criado: " + funcionario.getNome() + " (" + funcionario.getTipo() + ")");
+        System.out.println("Funcionário criado: " + funcionario.getNome() + " (" + funcionario.getId() + ")");
     }
 
     private static void acessarComoFuncionario() {
@@ -143,7 +143,7 @@ public class Main {
         System.out.print("Nome do produto a ser removido: ");
         String nome = scanner.nextLine();
 
-        Produto produto = estoque.buscarProdutoPorNome(nome);
+        Produto produto = estoque.buscarPorNome(nome);
         if (produto != null) {
             estoque.removerProduto(produto);
         } else {

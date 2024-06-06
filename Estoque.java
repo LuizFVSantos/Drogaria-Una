@@ -46,4 +46,28 @@ public class Estoque {
             System.out.println("Nenhum produto encontrado com a tarja: " + tipoTarja);
         }
     }
+
+    public Produto buscarPorNome(String nome) {
+        for (Produto produto : produtos) {
+            if (produto.getNome().equalsIgnoreCase(nome)) {
+                return produto;
+            }
+        }
+        return null;
+    }
+
+    public void realizarVenda(String nome, int quantidade) {
+        Produto produto = buscarPorNome(nome);
+        if (produto != null) {
+            if (produto.getQuantidade() >= quantidade) {
+                produto.setQuantidade(produto.getQuantidade() - quantidade);
+                System.out.println("Venda realizada. Quantidade restante do produto " + nome + ": " + produto.getQuantidade());
+            } else {
+                System.out.println("Quantidade insuficiente em estoque.");
+            }
+        } else {
+            System.out.println("Produto não encontrado.");
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 public class TarjaAmarela extends Produto {
 
-    public TarjaAmarela(String nome, double preco) {
-        super(nome, preco);
+    public TarjaAmarela(String nome, double preco, int quantidade) {
+        super(nome, preco, quantidade);
     }
 
     @Override
@@ -10,4 +10,3 @@ public class TarjaAmarela extends Produto {
     }
 }
 
-// Classe TarjaPreta que herda de Produto

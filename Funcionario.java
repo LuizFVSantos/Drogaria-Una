@@ -15,11 +15,12 @@ public abstract class Funcionario {
         return id;
     }
 
-    // Método abstrato para cadastrar produto
+
     public abstract void cadastrarProduto();
 
-    // Método abstrato para realizar venda
     public abstract void realizarVenda();
+
+    public abstract int getTipo();
+
 }
 
-// Classe Vendedor que herda de Funcionario

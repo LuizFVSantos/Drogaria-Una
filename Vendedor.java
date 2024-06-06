@@ -13,4 +13,9 @@ public class Vendedor extends Funcionario {
     public void realizarVenda() {
         System.out.println("Venda realizada pelo vendedor " + getNome());
     }
+
+    @Override
+    public int getTipo() {
+        return 1;
+    }
 }
